@@ -38,6 +38,11 @@ results/videos/*
 *.jsonl
 *.frames.csv
 *.summary.json
+# Keep the documented sample run above, but ignore all other generated artifacts.
+!results/videos/tensorflow_ssd_mobilenet_v2_fpnlite_640x640_video_vtest_detected.mp4
+!results/videos/tensorflow_ssd_mobilenet_v2_fpnlite_640x640_video_vtest_detected.frames.csv
+!results/videos/tensorflow_ssd_mobilenet_v2_fpnlite_640x640_video_vtest_detected.detections.jsonl
+!results/videos/tensorflow_ssd_mobilenet_v2_fpnlite_640x640_video_vtest_detected.summary.json
 
 # Secrets and local tooling
 *.pem

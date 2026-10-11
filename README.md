@@ -96,6 +96,16 @@ results/videos/vtest_detected.summary.json
 
 The MP4 contains the annotated frames. The CSV contains frame timing and object counts; the JSONL contains detections in frame coordinates; and the summary JSON records settings, environment, timing statistics, stop reason, and artifact paths. OpenCV does not copy source audio.
 
+The repository also includes a reference run generated from the downloaded
+sample video under `results/videos/`:
+
+```text
+tensorflow_ssd_mobilenet_v2_fpnlite_640x640_video_vtest_detected.*
+```
+
+Other generated result files remain ignored so local experiments do not
+accidentally become repository changes.
+
 ## Validation
 
 The repository has no heavyweight test suite. These focused checks validate the Python syntax and the CLI parser without downloading or loading the model:
