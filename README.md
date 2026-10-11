@@ -129,4 +129,8 @@ Asset download and end-to-end inference require network access, installed depend
 └── results/videos/                  # Generated outputs (ignored)
 ```
 
+The `data/videos/`, `models/`, and `results/videos/` directories contain only
+`.gitkeep` placeholders in the repository. Downloaded assets and generated
+outputs remain local and are excluded from Git by design.
+
 The model and sample-video sources, URLs, checksums, and license references are recorded in `scripts/download_detection_assets.py`. This repository does not add a project license.

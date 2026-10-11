@@ -24,12 +24,15 @@ dist/
 build/
 *.egg-info/
 
-# Local model and sample-data assets
-models/
-data/videos/
+# Local model and sample-data assets (keep directory placeholders visible)
+models/*
+!models/.gitkeep
+data/videos/*
+!data/videos/.gitkeep
 
-# Generated detection outputs
-results/
+# Generated detection outputs (keep directory placeholder visible)
+results/videos/*
+!results/videos/.gitkeep
 *.mp4
 *.avi
 *.jsonl
